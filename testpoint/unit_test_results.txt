@@ -1,0 +1,410 @@
+//====================================================
+// CallBackAction
+//====================================================
+From my_log(): this is callback test1 
+From my_log(): this is callback test2 
+From my_log(): this is callback test3 
+From my_log(): this is callback test4 
+From my_log(): this is callback test5 
+From my_log(): this is callback test6 
+From my_log(): this is callback test7 
+From my_log(): this is callback test8 
+From my_log(): this is callback test9 
+From my_log(): this is callback test10 
+From CallBackExample::CallBackLog():this is callback test1 
+From CallBackExample::CallBackLog():this is callback test2 
+From CallBackExample::CallBackLog():this is callback test3 
+From CallBackExample::CallBackLog():this is callback test4 
+From CallBackExample::CallBackLog():this is callback test5 
+From CallBackExample::CallBackLog():this is callback test6 
+From CallBackExample::CallBackLog():this is callback test7 
+From CallBackExample::CallBackLog():this is callback test8 
+From CallBackExample::CallBackLog():this is callback test9 
+From CallBackExample::CallBackLog():this is callback test10 
+
+//====================================================
+// ConstructAction
+//====================================================
+~ConstructA()
+the logic of no virtual for de-construct function is error!
+
+~ConstructC2()
+~ConstructB2()
+~ConstructA2()
+all are right!
+
+//====================================================
+// ConstAction
+//====================================================
+const int * p1 = lp;
+int const * p2 = lp;
+int * const p3 = lp;
+To judge which one is const
+	you can check who is nearer to const, '*' or p1/p2/p3
+
+const int *p1 = lp;
+const is near '*', content, content is unchanged!
+
+int const *p2 = lp;
+const is near '*', content, content is unchanged!
+
+int * const p3 = lp;
+const is near pointer parameter, pointer is unchanged!
+
+
+//====================================================
+// CoreEventAction
+//====================================================
+
+//====================================================
+// Duration
+//====================================================
+ASDurationManager Duration List Print:
+[10,20]
+
+ASDurationManager Duration List Print:
+[10,30]
+
+
+//====================================================
+// EndianAction
+//====================================================
+this is Little endian 
+this is Little endian 
+this is Little endian 
+this is Little endian 
+0xffffff88 0x77 0x66 0x55 0x44 0x33 0x22 0x11 
+
+//====================================================
+// ExceptionAction
+//====================================================
+exception caught: std::bad_typeid
+
+//====================================================
+// ExplicitAction
+//====================================================
+ExplicitStringA has not 'explicit', but ExplicitStringB has it: 
+	ExplicitStringA eStringA1("abc"); 		 OK!
+	ExplicitStringA eStringA2(10);      		 OK!
+	ExplicitStringB eStringB1("abc"); 		 OK!
+	ExplicitStringB eStringB2(10);      		 OK!
+
+	ExplicitStringA eStringA3 = "abc";		 OK!
+	ExplicitStringA eStringA4 = 10;     		 OK!
+	ExplicitStringB eStringB3 = "abc";		 Failed!
+	ExplicitStringB eStringB4 = 10;     		 Failed!
+
+//====================================================
+// EventLogAction
+//====================================================
+This is a Error test!
+This is a Exception test!
+
+//====================================================
+// FloatStruct
+//====================================================
+float 0.000000's memory structure is: 00 00 00 00 
+float 0.100000's memory structure is: cd cc cc 3d 
+float 0.200000's memory structure is: cd cc 4c 3e 
+float 0.300000's memory structure is: 9a 99 99 3e 
+double 0.000000's memory structure is: 00 00 00 00 00 00 00 00 
+double 0.100000's memory structure is: 9a 99 99 99 99 99 b9 3f 
+double 0.200000's memory structure is: 9a 99 99 99 99 99 c9 3f 
+double 0.300000's memory structure is: 33 33 33 33 33 33 d3 3f 
+
+Parse float 0.100000's memory structure: 
+	1 bit mSign	    1
+	8 bits mExponent  102
+	23 bits mMantissa 2025062
+
+
+Parse double 0.100000's memory structure: 
+	mSign	    0
+	mExponent 1229
+	mMantissa 1121062055680409
+
+
+//====================================================
+// HashMapAction
+//====================================================
+p1 != p2
+p1 == p3
+find p3 get name: p1
+
+//====================================================
+// KMPSearchAction
+//====================================================
+Find "luofei" in "llllllffffffffluoluoluofei": find it in 25
+Find "luofei" in "llllllffffffffluoluoluo": find failed
+Continue finding in "feillllllfffffffflu":find it in 2
+
+//====================================================
+// ListRun
+//====================================================
+MyNode 0
+MyNode 1
+MyNode 2
+MyNode 3
+MyNode 4
+MyNode 5
+MyNode 6
+MyNode 7
+MyNode 8
+MyNode 9
+
+//====================================================
+// MallocAction
+//====================================================
+
+//====================================================
+// MemCopyAction
+//====================================================
+memcpy performance : 50515 ms
+memmove performance : 155113 ms
+
+//====================================================
+// OperatorNew
+//====================================================
+void*(0x1ddab68) Exercise::operator new(size_t 16)
+Exercise::Exercise(int 1)
+Exercise::~Exercise()
+void Exercise::operator delete(void* 0x1ddab68, size_t 16)
+void*(0x1dda440) Exercise::operator new[](size_t 168)
+Exercise::Exercise()
+Exercise::Exercise()
+Exercise::Exercise()
+Exercise::Exercise()
+Exercise::Exercise()
+Exercise::Exercise()
+Exercise::Exercise()
+Exercise::Exercise()
+Exercise::Exercise()
+Exercise::Exercise()
+Exercise::~Exercise()
+Exercise::~Exercise()
+Exercise::~Exercise()
+Exercise::~Exercise()
+Exercise::~Exercise()
+Exercise::~Exercise()
+Exercise::~Exercise()
+Exercise::~Exercise()
+Exercise::~Exercise()
+Exercise::~Exercise()
+void Exercise::operator delete[](void* 0x1dda440, size_t 168)
+Exercise::Exercise()
+void*(0x1dda440) Exercise::operator new(size_t 16, char* 0x1dda440)
+Exercise::Exercise()
+Exercise::~Exercise()
+void Exercise::operator delete(void* 0x1dda440, size_t 16)
+
+//====================================================
+// OperatorSample
+//====================================================
+operator+
+operator-
+operator~
+
+//====================================================
+// OstringstreamAction
+//====================================================
+int : 1
+Uint8 : 1
+Bool : 1
+Short : 1
+
+//====================================================
+// PerformanceCompareAction
+//====================================================
+444279:482096(ms): the case order will effect the performance
+
+//====================================================
+// PrimSort
+//====================================================
+(0, 1)
+(0, 1)
+(0, 1)
+(0, 1)
+(0, 1)
+
+
+//====================================================
+// ScanfAction
+//====================================================
+IPv6 Address is 2001::1
+IPv6 Address is 2001::1; Port is 554
+this is a IPv4 address
+IPv6 Address is 200a::F
+IPv6 Address is 20
+
+//====================================================
+// SizeofAction
+//====================================================
+typedef struct _Empty_Struct
+{
+} Empty_Struct;
+sizeof(Empty_Struct)=1
+
+typedef struct _Int_Struct
+{
+	Uint32 m;
+} Int_Struct;
+sizeof(Int_Struct)=4
+
+class A
+{
+};
+sizeof(A)=1
+
+
+//====================================================
+// Sort
+//====================================================
+10 20 30 40 50 60 
+
+Half Search.....
+search 30 at 3
+
+Half Search.....
+search 20 at 2
+
+Insert Sort.....
+49 38 65 97 76 13 27 49 
+38 49 65 97 76 13 27 49 
+38 49 65 97 76 13 27 49 
+38 49 65 97 76 13 27 49 
+38 49 65 76 97 13 27 49 
+13 38 49 65 76 97 27 49 
+13 27 38 49 65 76 97 49 
+13 27 38 49 49 65 76 97 
+
+Selection Sort.....
+49 38 65 97 76 13 27 49 
+13 38 65 97 76 49 27 49 
+13 27 65 97 76 49 38 49 
+13 27 38 97 76 49 65 49 
+13 27 38 49 76 97 65 49 
+13 27 38 49 49 97 65 76 
+13 27 38 49 49 65 97 76 
+13 27 38 49 49 65 76 97 
+13 27 38 49 49 65 76 97 
+
+Bubble Sort.....
+49 38 65 97 76 13 27 49 
+38 49 65 76 13 27 49 97 
+38 49 65 13 27 49 76 97 
+38 49 13 27 49 65 76 97 
+38 13 27 49 49 65 76 97 
+13 27 38 49 49 65 76 97 
+13 27 38 49 49 65 76 97 
+
+Heap Sort.....
+49 38 65 97 76 13 27 49 
+
+//====================================================
+// STLSet
+//====================================================
+lower_bound means ">="; while upper_bound ">"
+Inset number to myset: 10 20 30 40 50 60 70 80 90 
+myset.lower_bound(35) is 40
+myset.upper_bound(35) is 40
+Arrive the end of set
+myset.lower_bound(40) is 40
+myset.upper_bound(40) is 50
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+5 4 3 2 1 
+~set() and clear() will call each of the contained element's destructors.
+~Set_Element is called! mElementValue= 5
+~Set_Element is called! mElementValue= 4
+~Set_Element is called! mElementValue= 3
+~Set_Element is called! mElementValue= 2
+~Set_Element is called! mElementValue= 1
+Finished at here!
+
+//====================================================
+// StringAction
+//====================================================
+original string's size is 100; capacity is 100
+after clear, string's size is 0; capacity is 100
+after earse, string's size is 0; capacity is 100
+before earse, "luofei/"; after earse, "luofei";
+before earse, "luofei"; after earse, "luofei";
+original vecotor's size is 4; capacity is 4
+after clear, string's size is 0; capacity is 4
+after swap, string's size is 0; capacity is 0
+
+//====================================================
+// StructEqual
+//====================================================
+struct 1's address is 0x7ffffc938180; m1=1; m2=1; p=0x1ddade8
+struct 2's address is 0x7ffffc938170; m1=2; m2=2; p=0x1ddada8
+after equal: 
+struct 1's address is 0x7ffffc938180; m1=2; m2=2; p=0x1ddada8
+struct 2's address is 0x7ffffc938170; m1=2; m2=2; p=0x1ddada8
+there are memory leaking in m1.p=0x1ddade8
+
+//====================================================
+// TemplateDerived
+//====================================================
+Printf SipNgHearderCallId List
+SipNgHearderCallId mId = 1
+SipNgHearderCallId mId = 2
+
+Printf SipNgHearderContentType List
+SipNgHearderContentType mType = 11
+SipNgHearderContentType mType = 12
+
+
+//====================================================
+// TimeScale
+//====================================================
+loop 10000000 times, dynamic_cast cost 145648 ms, static_cast cost 24684 ms
+static_cast() is faster than dynamic_cast
+
+//====================================================
+// TypeTransfer
+//====================================================
+static_cast, dynamic_cast, etc will remove warning information when compile castless conversion: i=0x7fff 0d32767; long=32767; float=32767.000000
+static_cast conversion: i=0x7fff 0d32767, long=32767, float=32767.000000
+
+//====================================================
+// VirtualFunction
+//====================================================
+2
+2
+2
+1
+2
+1
+2
+1
+
+//====================================================
+// XercesAction
+//====================================================
+<Subnet>
+<IPRange>
+</IPRange>
+<Netmask>
+</Netmask>
+</Subnet>
+
+//====================================================
+// XSDDateAction
+//====================================================
+Year 2002; Month 9; Day 24; Negative 0; Hour 0; Minute 0; 
+Year 2002; Month 9; Day 24; Negative 0; Hour 0; Minute 0; 
+Year 2002; Month 9; Day 24; Negative 1; Hour 6; Minute 0; 
+Year 2002; Month 9; Day 24; Negative 0; Hour 6; Minute 0; 
+Negative 1; Year 5.000000, Month 0.000000, Day 0.000000, Hour 0.000000, Minute 0.000000, Second 0.000000
+Negative 1; Year 5.000000, Month 2.000000, Day 10.000000, Hour 0.000000, Minute 0.000000, Second 0.000000
+Negative 1; Year 5.000000, Month 2.000000, Day 10.000000, Hour 15.000000, Minute 0.000000, Second 0.000000
+Negative 1; Year 0.000000, Month 0.000000, Day 0.000000, Hour 15.000000, Minute 0.000000, Second 0.000000
+Negative -1; Year 0.000000, Month 0.000000, Day 10.000000, Hour 0.000000, Minute 0.000000, Second 0.000000
+CoreEventAction::TimerFired(): delta time 2000 ms
+CoreEventAction::TimerFired(): delta time 1000 ms
+CoreEventAction::TimerFired(): delta time 1000 ms
+CoreEventAction::TimerFired(): delta time 1000 ms
+CoreEventAction::TimerFired(): delta time 1000 ms
+TestTimer::~TestTimer()
