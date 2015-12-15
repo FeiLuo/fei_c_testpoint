@@ -14,7 +14,6 @@ My C++ project to record c++ key points
 - timewheel
 - pcap file formats
 - xerces for xml
-- 
 
 ### Some research points 
   locate in testpoint folder to help research c++ some key point
