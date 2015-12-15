@@ -1,12 +1,10 @@
 # fei_c_testpoint
 My C++ project to record c++ key points
-some framework files removed 
-
-# fei_c_demo
-My demo project for C++
 - research c++ framework
 - summarize some c++ key point
 
+
+## some framework files removed 
 
 ### Features:
 - scons for multiple platform complie
