@@ -1,0 +1,7 @@
+export XERCESCROOT=/swat/mytest/KnowledgeCodes_Linux64/Knowledge/vendor/xerces/xerces/
+cd src/xercesc
+./runConfigure -plinux -cgcc -xg++ -minmem -nsocket -tnative -rnone -s
+make
+cd ../..
+cp lib/libxerces-c.a ../../../lib/libxerces.a
+

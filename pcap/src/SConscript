@@ -1,0 +1,16 @@
+Import('env')
+Import('config')
+
+source = [
+    'PCapPacket.cc',
+    'PCapActionOption.cc',
+    'PCapPlayAction.cc',
+    'PCapFileAction.cc',
+    'PCapFile.cc',
+]
+
+e = env.Clone()
+
+# Generate Library
+lib = e.Library(config['buildlibs'] + '/pcap', source)
+

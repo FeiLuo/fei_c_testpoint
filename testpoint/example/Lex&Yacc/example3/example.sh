@@ -1,0 +1,3 @@
+lex example3.l
+cc lex.yy.c -o example3 -ll
+

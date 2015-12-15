@@ -1,0 +1,45 @@
+Import('env')
+Import('config')
+
+source = [
+  'ActionBase.cc',
+  'AllActions.cc',
+  'CallBackAction.cc',
+  'ConstAction.cc',
+  'ConstructAction.cc',
+  'CoreEventAction.cc',
+  'Duration.cc',
+  'ExceptionAction.cc',
+  'ExplicitAction.cc',
+  'EventLogAction.cc',
+  'EndianAction.cc',
+  'FloatStruct.cc',
+  'HashMapAction.cc',
+  'KMPSearchAction.cc',
+  'ListRun.cc',
+  'MallocAction.cc',
+  'MemCopyAction.cc',
+  'OperatorNew.cc',
+  'OperatorSample.cc',
+  'OstringstreamAction.cc',
+  'PerformanceCompareAction.cc',
+  'Prim.cc',
+  'ScanfAction.cc',
+  'SizeofAction.cc',
+  'Sort.cc',
+  'STLSet.cc',
+  'StringAction.cc',
+  'StructEqual.cc',
+  'TemplateDerived.cc',
+  'TimeScale.cc',
+  'TypeTransfer.cc',
+  'VirtualFunction.cc',
+  'XercesAction.cc',
+  'XSDDateAction.cc'
+]
+
+e = env.Clone()
+
+# Generate Library
+lib = e.Library(config['buildlibs'] + '/testpoint', source)
+

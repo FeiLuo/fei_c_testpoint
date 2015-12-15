@@ -1,0 +1,8 @@
+PCAPPLAY 123.pcap OUTFILE=22.pcap
+# Impletement 
+PCapFile Input=123.pcap Output=output.pcap
+PCapFile Input=123.pcap Output=output.pcap FUNC
+{
+dddd
+}  ss 
+

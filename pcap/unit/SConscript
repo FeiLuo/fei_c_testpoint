@@ -1,0 +1,12 @@
+Import('env')
+Import('config')
+
+source = [
+    'Pcap.ut.cc'
+]
+
+e = env.Clone()
+e['LIBS'] = env['MainLibraries']
+
+e.Program(config['buildbin'] + '/pcap', source)
+
